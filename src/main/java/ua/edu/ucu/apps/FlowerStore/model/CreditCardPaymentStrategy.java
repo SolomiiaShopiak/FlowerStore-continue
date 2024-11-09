@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.FlowerStore;
+package ua.edu.ucu.apps.FlowerStore.model;
 
 public class CreditCardPaymentStrategy implements Payment{
     private String cardNumber;

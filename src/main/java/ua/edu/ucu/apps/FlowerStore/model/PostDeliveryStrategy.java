@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.FlowerStore;
+package ua.edu.ucu.apps.FlowerStore.model;
 
 import java.util.List;
 
