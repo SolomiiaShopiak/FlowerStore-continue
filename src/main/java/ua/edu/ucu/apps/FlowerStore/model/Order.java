@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class Order {
+    private List<User> users = new LinkedList<>();
     private List<Item> items;
     private Payment payment;
     private Delivery delivery;
@@ -44,5 +45,23 @@ public class Order {
 
     public void removeItem(Item item) {
         items.remove(item);
+    }
+
+    public void addUser(User user) {
+        users.add(user);
+    }
+
+    public void removeUser(User user) {
+        users.remove(user);
+    }
+
+    public void notifyUsers() {
+        for (User user : users) {
+            user.update("Order status updated.");
+        }
+    }
+
+    public void order() {
+        notifyUsers();
     }
 }

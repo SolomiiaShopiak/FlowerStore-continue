@@ -1,14 +1,12 @@
-### Test GET all flowers
-GET http://localhost:8080/api/flowers
+### Test GET all users
+GET http://localhost:8080/api/appusers
 Accept: application/json
 
-### Test POST new flower
-POST http://localhost:8080/api/flowers
+### Test POST to add a new user
+POST http://localhost:8080/api/appusers
 Content-Type: application/json
 
 {
-  "name": "Rose",
-  "color": "Red",
-  "price": 15.99,
-  "available": true
+  "email": "johndoe@example.com",
+  "dob": "1990-05-14"
 }
